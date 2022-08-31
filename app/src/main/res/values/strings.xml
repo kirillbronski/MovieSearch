@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Movie Search</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_movie">Movie</string>
+    <string name="try_again">Try Again</string>
+    <string name="movie_not_found">Movie not found</string>
+    <string name="data_failed_to_load">Data failed to load</string>
+    <string name="result_could_not_be_loaded">Result could not be loaded</string>
+    <string name="retry">Retry</string>
+    <string name="bottom_movie">Movie</string>
+    <string name="menu_television">Television</string>
+</resources>

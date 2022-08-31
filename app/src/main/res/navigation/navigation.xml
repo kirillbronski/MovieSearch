@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/movieFragment">
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.bronski.moviesearch.ui.view.fragment.MovieFragment"
+        android:label="Movie"
+        tools:layout="@layout/fragment_movie">
+        <action
+            android:id="@+id/action_movieFragment_to_detailsFragment"
+            app:destination="@id/movieDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.bronski.moviesearch.ui.view.fragment.MovieDetailsFragment"
+        android:label="Movie Details"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="movie"
+            app:argType="com.bronski.moviesearch.data.model.Movie" />
+    </fragment>
+    <fragment
+        android:id="@+id/televisionFragment"
+        android:name="com.bronski.moviesearch.ui.view.fragment.TelevisionFragment"
+        android:label="Television"
+        tools:layout="@layout/fragment_television">
+        <action
+            android:id="@+id/action_televisionFragment_to_televisionDetailsFragment"
+            app:destination="@id/televisionDetailsFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/televisionDetailsFragment"
+        android:name="com.bronski.moviesearch.ui.view.fragment.TelevisionDetailsFragment"
+        android:label="Television Details"
+        tools:layout="@layout/fragment_television_details">
+        <argument
+            android:name="television"
+            app:argType="com.bronski.moviesearch.data.model.Television" />
+    </fragment>
+</navigation>
